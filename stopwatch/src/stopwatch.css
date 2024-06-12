@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #111111b7;
+    /* Add a subtle gradient to the background */
+    background: #000000;
+  }
+  
+  .stopwatch {
+    display: flex;
+    position: relative;
+    top: 100px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* Add a glassmorphism effect with a blurred background */
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    /* Add a subtle shadow */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .display {
+    font-size: 2.5rem;
+    font-family: monospace;
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+    text-shadow: 2px 2px 2px #111111b7;
+    margin-bottom: 25px;
+    /* Add a subtle glow effect */
+  }
+  
+  .control button {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 5px;
+    min-width: 125px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.5s ease;
+    /* Add a glassmorphism effect to the buttons */
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+  }
+  
+  .start-button {
+    background-color: rgba(35, 235, 35, 0.945);
+  }
+  .start-button:hover {
+    background-color: rgb(20, 155, 20);
+    /* Add a subtle pulse effect on hover */
+    animation: pulse 1s infinite;
+  }
+  
+  .stop-button {
+    background-color: rgba(255, 81, 0, 0.945);
+  }
+  .stop-button:hover {
+    background-color: rgb(185, 37, 0);
+    /* Add a subtle pulse effect on hover */
+    animation: pulse 1s infinite;
+  }
+  
+  .reset-button {
+    background-color: rgba(0, 104, 189, 0.945);
+  }
+  .reset-button:hover {
+    background-color: rgb(0, 48, 104);
+    /* Add a subtle pulse effect on hover */
+    animation: pulse 1s infinite;
+  }
+  
+  /* Pulse animation */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
