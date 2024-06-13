@@ -1,0 +1,72 @@
+/* src/App.css */
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+nav {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #000000;
+  padding: 10px 0;
+  transition: background-color 0.3s ease;
+  transition: all 0.2s ease;
+
+
+}
+nav:hover{
+  background-color: rgb(15, 15, 15);
+  
+  transition: all 0.2s ease;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: 	#E5E5E5;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+nav ul li a:hover  {
+  transition:  0.2s ease;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+
+
+}
+
+.nav-scrolled:hover {
+  background-color: #ff0000;
+}
+
+
+.nav-hovered-home {
+  background-color: #ff0000;
+}
+
+.nav-hovered-about {
+  background-color: #555;
+}
+
+.nav-hovered-services {
+  background-color: #666;
+}
+
+.nav-hovered-contact {
+  background-color: #777;
+}

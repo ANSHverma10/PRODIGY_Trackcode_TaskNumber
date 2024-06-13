@@ -1,0 +1,72 @@
+/* services.css */
+
+.services {
+    /* Container styles */
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  body:hover .services h1,
+nav:hover .services h1 {
+  color: #000000; /* or any other color you want to maintain */
+}
+  
+  .service {
+    /* Individual service item styles */
+    margin-bottom: 20px;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    color: black;
+  }
+  .service h1{
+    color: black;
+  }
+  .service:last-child {
+    border-bottom: none;
+    color: black;
+  }
+  
+  .service-icon {
+    /* Icon styles */
+    font-size: 24px;
+    margin-right: 10px;
+    color: #666;
+  }
+  
+  .service-title {
+    /* Title styles */
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color:black;
+  }
+  
+  .service-description {
+    /* Description styles */
+    font-size: 16px;
+    color: black;
+  }
+  
+  .service-button {
+    /* Button styles */
+    margin-top: 10px;
+    background-color: #000000;
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+  }
+  
+  .service-button:hover {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    transition: all 0.2s ease;
+  }
